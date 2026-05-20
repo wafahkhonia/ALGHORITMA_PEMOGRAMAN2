@@ -1,0 +1,103 @@
+#no 1
+nama = ("Wafah Khonia") #string
+umur = 18              #integer
+satuanumur = 'tahun'   #char
+satuan = 'cm'          #char
+tinggi = 160.0         #float
+
+print("Nama:", nama)                  #mencetak nama dan tipe datanya
+print("Umur:", umur, satuanumur)      #mencetak umur dan tipe datanya
+print("Tinggi:", tinggi, satuan)      #mencetak tinggi dan tipe datanya
+
+#no 2
+print(11111111)
+print(-11111111)
+
+#no 3
+print(0o755) # Octal: 755 = 493 dalam desimal,755 = (7x8^2) + (5x8^1) + (5x8^0) = 448 + 40 + 5 = 493
+print(0o12)  # Octal: 12 = 10 dalam desimal, 12 = (1x8^1) + (2x8^0) = 8 + 2 = 10
+
+# Hexadecimal dimulai dengan (0x) basis 16,
+print(0xFF)  # Hex: FF = 255 dalam desimal, 255 = (15x16^1) + (15x16^0) = (15x16) + (15x1) = 240 + 15 = 255
+print(0x1A)  # Hex: 1A = 26 dalam desimal, 26 = (1x16^1) + (10x16^0) = (1x16) + (10x1) = 16 + 10 = 26
+
+#no 4
+# float dengan nol
+print(0.4)
+print(4.0)
+# float tanpa nol
+print(.4)
+print(4.)
+#float dengan notasi eksponensial
+print(4e-1)
+print(4.0e0)
+print(0.4e0)
+
+#no 5
+print("tulis hallo word")
+print('tulis hallo word')
+print("tulis 'hallo word'")
+print('tulis "hallo word"')
+
+#no 6
+print(True)
+print(False)
+
+#no 7
+print(2**3)       # integer-integer: 2^3 = 8
+print(2**3.0)     # integer-float: 2^3.0 = 8.0
+print(2.0**3)     # float-integer: 2.0^3 = 8.0
+print(2.0**3.0)   # float-float: 2.0^3.0 = 8.0
+
+#no 8
+print(2 * 3)       # integer * integer: 2 * 3 = 6
+print(2 * 3.0)     # integer * float: 2 * 3.0 = 6.0
+print(2.0 * 3)     # float * integer: 2.0 * 3 = 6.0
+print(2.0 * 3.0)   # float * float: 2.0 * 3.0 = 6.0
+
+#no 9
+print(10 / 3)      # integer / integer: 10 / 3 = 3.3333...
+print(10 / 3.0)    # integer / float: 10 / 3.0 = 3.3333...
+print(10.0 / 3)    # float / integer: 10.0 / 3 = 3.3333...
+print(10.0 / 3.0)  # float / float: 10.0 / 3.0 = 3.3333...
+
+#no 10
+print(10 // 3)     # integer // integer: 10 // 3 = 3
+print(10 // 3.0)   # integer // float: 10 // 3.0 = 3.0
+print(10.0 // 3)   # float // integer: 10.0 // 3 = 3.0
+print(10.0 // 3.0) # float // float: 10.0 // 3.0 = 3.0
+
+#no 11
+print(10 % 3)      # integer % integer: 10 % 3 = 1
+print(10 % 3.0)    # integer % float: 10 % 3.0 = 1.0
+print(10.0 % 3)    # float % integer: 10.0 % 3 = 1.0
+print(10.0 % 3.0)  # float % float: 10.0 % 3.0 = 1.0
+
+#no 12
+# Operator biner (beroperasi pada dua operand)
+print(+5)          # Penjumlahan unary: +5 = 5
+print(-5)          # pengurangan unary: -5 = -5
+print(not True)    # Logika NOT: not True = False (kebalikannya)
+print(not False)   # Logika NOT: not False = True (kebalikannya)
+
+# Operator biner (beroperasi pada dua operand)
+print(5 + 3)       # Penjumlahan biner: 5 + 3 = 8
+print(5 - 3)       # Pengurangan biner: 5 - 3 = 2
+print(5 * 3)       # Perkalian biner: 5 * 3 = 15
+print(5 / 3)       # Pembagian biner: 5 / 3 = 1.6666...
+print(5 // 3)      # Pembagian bulat biner: 5 // 3 = 1
+print(5 % 3)       # Modulo biner: 5 % 3 = 2
+print(5 ** 3)      # Pangkat biner: 5 ** 3 = 125
+print(5 > 3)       # Perbandingan biner: 5 > 3 = True
+print(5 == 3)      # Kesetaraan biner: 5 == 3 = False
+print(5 and 3)     # Logika AND biner: 5 and 3 = 3
+print(5 or 3)      # Logika OR biner: 5 or 3 = 5
+
+#no 13
+print(2 + 3 * 4)          # Subekspresi: 3 * 4, hasil: 2 + 12 = 14
+print((2 + 3) * (4 + 5))  # Subekspresi: (2 + 3) dan (4 + 5), hasil: 5 * 9 = 45
+
+#no 14
+print((2 ** 4), (2 * 4.), (2 * 4))
+print((-2 / 4), (2 / 4), (2 // 4), (-2 // 4))
+print((2 % -4), (2 % 4), (2 ** 3 ** 2))
