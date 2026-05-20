@@ -1,0 +1,81 @@
+#no1
+print('nama kamu siapa?')
+anything = input()
+print('halo ' + anything)
+
+#no2
+print('nama kamu siapa?')
+anything = input("masukkan nama kamu:")
+print('halo ' , anything, 'selamat datang')
+
+#no3
+anything =(input("Enter a Number :"))
+something = anything * 2
+print(anything, "te the power of 2 is", something)
+
+#no4 (versi 1)
+anything =float(input("Enter a Number :"))
+something = anything * 2
+print(anything, "te the power of 2 is", something)
+
+#no4 (versi 2)
+anything = (input("Enter a Number :"))
+something = float(anything) * 3.0
+print(anything, "te the power of 2 is", something)
+
+#n05 (versi 1)
+alas   = float(input("Masukkan sisi alas: "))
+tinggi = float(input("Masukkan sisi tinggi: "))
+hypo   = (alas**2 + tinggi**2) ** 0.5
+print ("Sisi miring segitiga adalah: ", hypo)
+
+#no5 (versi 2)
+x = float(input("Masukkan sisi x: "))
+y = float(input("Masukkan sisi y: "))
+hypo = (x**2 + y**2) ** 0.5
+print("Sisi miring segitiga adalah:", hypo)
+
+#NO6
+alas = float(input('masukkan panjang alas: '))
+tinggi = float(input('masukan panjang tinggi: '))
+print ('panjang sisi segitiga adalah: ', 
+       round((alas ** 2 + tinggi ** 2) **0.5, 2))
+
+#no7
+kalimat_pertama = input("masukan kalimat pertama: ")
+kalimat_kedua   = input("masukan kalimat kedua:   ")
+nama_lengkap  = kalimat_pertama + " " + kalimat_kedua
+print ("nama lengkap saya adalah:", nama_lengkap)
+
+#no8
+sapa = input("masukan kata sapaan: ")
+nama = input("nama kamu: ")
+print ("hasil replikasi sapaan: ", sapa*3, nama)
+
+#no9
+nilai = 25
+print("hasil akhir adalah: ", str(nilai))
+
+#no10
+pecahan = 25.5
+print(type(pecahan))
+
+#no11
+a= float(input("masukan nilai a: "))
+b= float(input("masukan nilai b: "))
+
+print("Hasil penjumlahan:", a + b)
+print("Hasil pengurangan:", a-b)
+print("Hasil pembagian:", a / b)
+print("Hasil perkalian:", a * b)
+print ("Selamat kamu sudah pintar matematika")
+
+#no13
+jam = int (input("waktu mulai (jam): "))
+menit = int (input("waktu mulai (menit): "))
+durasi = int(input("durasi acara (menit): "))
+menit += durasi
+jam += menit // 60
+menit %= 60
+
+print("acara kan selesai pukul", jam, ":", menit)

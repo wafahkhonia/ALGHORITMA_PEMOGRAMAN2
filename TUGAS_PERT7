@@ -1,0 +1,54 @@
+# 11. Menggunakan list
+print("\nn11. Menggunakan List")
+my_list = [10, 1, 8, 3, 5]
+total= 0
+
+for i in my_list:
+    total += i
+
+print(total)
+
+# 12. List in action
+print("\nn12. List in action")
+my_list = [10, 1, 8, 3, 5]
+
+my_list[0], my_list[4] = my_list[4], my_list[0]
+my_list[1], my_list[3] = my_list[3], my_list[1]
+
+print(my_list)
+
+print("\n panjang list 100")
+my_list=list (range(100, 0, -1))
+length = len(my_list)
+
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+
+print(my_list)
+
+# 13. Kuis 20
+print("\nn13. Kuis 20")
+exo = []
+print("langkah 1:", exo)
+
+exo.append("Suho")
+exo.append("Kai")
+exo.append("Chanyeol")
+exo.append("Sehun")
+print("langkah 2:", exo)
+
+tambahan = ["DO", "Baekhyun", "Kris", "Lay", "Luhan", "Tao", "Chen"]
+for i in tambahan:
+    exo.append(i)
+print("langkah 3:", exo)
+
+exo.remove("Kris")
+exo.remove("Luhan")
+exo.remove("Tao")
+print("langkah 4:", exo)
+
+exo.insert(-3, "Xumin") #insert untuk menambahkan elemen pada posisi tertentu,
+                        #-3 berarti sebelum 3 elemen terakhir
+print("langkah 5:", exo)
+
+print(exo)

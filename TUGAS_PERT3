@@ -1,0 +1,102 @@
+# jawaban no.1
+print("jawaban no.1")
+#membuat variabel
+var = 10                         # unery = angkanya
+nilai = 90                       # var/nilai = variabelnya
+nama_mahasiswa = "wafah khonia"
+
+#menampilkan isi dari variabel
+#memanggil variabel
+#penulisan harus sesuai dengan penamaan variabel yang atas
+print(var)
+print(nilai)
+print(nama_mahasiswa)
+print(var, nilai, nama_mahasiswa)
+
+# jawaban no.2
+print()
+print("jawaban no.2")
+Nama = "Budi"
+print(Nama)
+print(nama)
+
+# jawaban no.3
+print()
+print("jawaban no.3")
+#membuat variabel dengan nilai awal
+umur = 18
+print(umur )
+
+#memasukan nilai baru
+umur = umur + 1
+print(umur)
+
+# jawaban no.4
+print()
+print("jawaban no.4")
+#membuat variabel dengan nilai awal
+tabungan = 1000000
+
+#tambahkan nilai baru ke dalam variabel yang sama
+tabungan = 1000000 + 500000
+print("tabungan sekarang :", tabungan)
+
+# jawaban no.5
+print()
+print("jawaban no.5")
+y = 10
+y *= 10
+cow = 2
+cow += y
+print("nilai y :", y)
+print("nilai cow :", cow)
+
+# jawaban no.6
+print()
+print("jawaban no.6")
+p = 5
+q = 3
+r =(p **2 + q **2) + 2     # (5^2 + 3^2) +2
+print("nilai r :", r)
+
+# jawaban no.7
+print()
+print("jawaban no.7")
+ayu = 10000
+bagus = 15000
+citra = 20000
+print(ayu, bagus, citra)
+
+Jumlah_tabungan = ayu + bagus + citra
+print("jumlah tabungan adalah :", Jumlah_tabungan)
+
+# jawaban no.8
+print()
+print("jawaban no.8")
+kilometers = 10.568
+miles = 8.753
+
+miles_to_kilometers = miles * 1.61
+kilometers_to_miles = kilometers / 1.61
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+
+# jawaban no.9
+print()
+print("jawaban no.9")
+#nilai_x = (0,1,-1)
+x = 0
+x = float(x)
+y = 3*x**3 - 2*x**2 + 3*x - 1
+print("nilai y =", y)
+
+x = 1
+x = float(x)
+y = 3*x**3 - 2*x**2 + 3*x - 1
+print("nilai y =", y)
+
+x = -1
+x = float(x)
+y = 3*x**3 - 2*x**2 + 3*x - 1
+print("nilai y =", y)

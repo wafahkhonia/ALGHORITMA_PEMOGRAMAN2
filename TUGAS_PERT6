@@ -1,0 +1,266 @@
+# ==========================================
+# No. 1 (Tugas4.py - Infinite Loop)
+# ==========================================
+while True:
+    print ("Believe in yourself")
+
+
+# ==========================================
+# No. 2 (Tugas6.py - Perkalian Pulpen)
+# ==========================================
+Pulpen = 4
+while Pulpen <= 70:
+    print ("Pulpen")
+    Pulpen *= 2
+
+
+# ==========================================
+# No. 3 (Program Penghitung Ganjil Genap)
+# ==========================================
+Angka_Genap = 0
+Angka_Ganjil = 0
+ 
+Angka = int(input("Masukkan suatu angka (Jika ingin berhenti ketik angka 0): "))
+ 
+while Angka != 0:
+    if Angka % 2 == 1:
+        Angka_Ganjil += 1
+    else:
+        Angka_Genap += 1
+ 
+    Angka = int(input("Masukkan suatu angka (Jika ingin berhenti ketik angka 0): "))
+ 
+print("Jumlah Angka Ganjil: ", Angka_Ganjil)
+print("Jumlah Angka Genap: ", Angka_Genap)
+
+
+# ==========================================
+# No. 4 (Game Tebak Angka Versi 1)
+# ==========================================
+secret_number = 777
+
+print(
+"""    #digunakan untuk String Multiline. Memungkinkan menulis teks yang panjang dan memiliki banyak baris
++=======================================+
+| Selamat datang di game saya, muggle!  |
+|                                       |
+| Masukkan suatu angka dan tebak        |
+| angka berapa yang saya pilih          |
+| untukmu.                              |
+| Jadi, berapakah angka rahasianya      |
++=======================================+
+""")
+
+# 1. Pengguna menginput untuk pertama kali sebelum masuk keperulangan(Loop)
+Tebak_angka = int(input("Masukkan angka: "))
+
+# 2. while digunakan agar program terus meminta input kepada pengguna sampai tebakannya benar.
+while Tebak_angka != secret_number:
+    print( "hahaha! kamu nyangkut deh di Loop saya")
+    Tebak_angka = int(input("Masukkan angka lagi: "))
+
+# 3. jika sudah ketebak maka akan menampilkan ini
+print(secret_number, "Selamat, Muggle! kamu bebas sekarang!")
+
+
+# ==========================================
+# No. 5 (Eksperimen range() A sampai E)
+# ==========================================
+for A in range (5):                      #range(5)Menghasilkan urutan angka mulai dari 0 sampai 4 (total 5
+    #angka).
+    print ("Nilai A saat ini adalah", A)
+print()
+
+for B in range (5, 9):                   #range(5, 9)Menentukan batas bawah (5) dan batas atas (9). Perlu
+#diingat, angka terakhir (9) tidak diikutsertakan. Hasil: Mencetak angka 5, 6, 7, dan 8.
+    print ("Nilai B saat ini adalah", B)
+print()
+
+for C in range (1, 5, 9):                #range (1, 5, 9)Formatnya adalah range(mulai, berhenti, langkah).
+#Hanya mencetak angka 1, karena setelah angka 1 kamu disuruh loncat 9 langkah (ke angka 10), tapi dilarang
+#melewati batas angka 5.
+    print ("Nilai C saat ini adalah", C)
+print()
+
+for D in range (2, 2):                   #Tidak mencetak apa pun. Karena mulai di angka 2 dan berhenti
+#sebelum angka 2, sehingga tidak ada ruang untuk berjalan.
+    print ("Nilai D saat ini adalah", D)
+print()
+
+for E in range (8, 3):                   #Tidak mencetak apa pun. Karena mulai di angka 8 dan sudah
+#melewati batasberhentinya (3), sehingga tidak ada ruang untuk berjalan.
+    print ("Nilai E saat ini adalah", E)
+print()
+
+
+# ==========================================
+# No. 6 (Perulangan Pangkat dengan For)
+# ==========================================
+Power = 1   #variabel bernama Power bernilai 1
+
+#for expo membuat variabel baru bernama expo yang nilainya akan berubah otomatis di setiap putaran.
+for expo in range (11):   #menghasilkan deretan angka mulai dari 0 sampai 10 (totalnya ada 11)
+    print ("2 Pangkat ", expo, "adalah", Power)
+    Power *= 2
+    #nilai di dalam variabel Power yang sekarang akan dikalikan dengan 2, lalu hasilnya disimpan
+    #kembali ke dalam variabel Power untuk digunakan pada putaran berikutnya.
+
+
+# ==========================================
+# No. 7 (Instruksi Break dan Continue)
+# ==========================================
+#Break(menghentikan paksa seluruh perulangan saat kondisi tertentu terpenuhi)
+print ("Intruksi Break: ")
+for i in range (1, 7):
+    if i == 4:
+        break
+    print ("Bagian ini ada di dalam Loop", i)
+print("Bagian ini ada di luar Loop")
+
+#Continue(melewati sisa perintah di putaran saat ini dan langsung melompat ke putaran berikutnya)
+print ("\nIntruksi Continue:")
+for i in range (1, 6):
+    if i == 2:
+        continue
+    print ("Bagian ini ada di dalam Loop", i)
+print("Bagian ini ada di luar Loop")
+
+
+# ==========================================
+# No. 8 (Game Tebak Angka Versi 2 - while True)
+# ==========================================
+secret_number = 777
+
+print(
+"""
++=======================================+
+| Selamat datang di game saya, muggle!  |
+|                                       |
+| Masukkan suatu angka dan tebak        |
+| angka berapa yang saya  pilih         |
+| untukmu.                              |
+|                                       |
+| Jadi, berapakah angka rahasianya      |
++=======================================+
+""")
+
+while True:
+    Tebak_angka = int(input("Masukkan angka: "))
+
+    if Tebak_angka == secret_number:
+        print ("SELAMAT, MUGGLE! KAMU BEBAS SEKARANG")
+        break
+    else:
+        print ("Hahaha! Kamu Tersangkut di Loop Saya, Ayo Tebak Lagi")
+
+
+# ==========================================
+# No. 9 (Pengecekan Huruf Konsonan - Kata.upper)
+# ==========================================
+#Pengguna dapat menginput kata
+Kata = input("Masukkan suatu kata: ")
+
+#upper() untuk merubah kata ke huruf kapital
+User_word = Kata.upper()
+
+print("\nOutput:")
+
+#loop for untuk mengecek setiap huruf
+for Huruf in User_word:
+
+    #percabangan (if-elif) dan continue untuk mengecek huruf vokal
+    if Huruf == "A":
+        continue
+    elif Huruf == "I":
+        continue
+    elif Huruf == "U":
+        continue
+    elif Huruf == "E":
+        continue
+    elif Huruf == "O":
+        continue
+    #else untuk mencetak huruf konsonan yang tidak diambil oleh percabangan
+    else:
+        print(Huruf)
+
+
+# ==========================================
+# No. 10 (Struktur Perulangan dengan Else)
+# ==========================================
+# while - else
+A = 2
+while A <= 15:
+    print(A)
+    A += 2
+else:
+    print("else: ", A)
+
+# for - else
+for A in range(4):
+    print(A)
+else:
+    print("Hasil Akhir:", A)
+
+
+# ==========================================
+# No. 11 (Ekspresi & Operator Logika)
+# ==========================================
+#Ekspresi Logika
+print (A < B)   ##15 lebih kecil dari 59 (True)
+print (A != B)  ##15 tidak sama dengan 59 (True)
+print (B == C)  ##59 sama dengan 59 (True)
+print (C < A)   ##59 lebih kecil dari 15 (False)
+
+#Operator Logika
+print (A < B and B == C ) #15 lebih kecil dari 59 dan 59 sama dengan 59 (True)
+print (A < B or C > A)    #15 lebih kecil dari 59 atau 59 lebih besar dari 15 (True)
+print (not(A > B))        #15 lebih besar dari 59 (False) karena ada not maka false
+#tersebut dibalik jadi True
+
+
+# ==========================================
+# No. 12 (Logical & Bit Teks)
+# ==========================================
+#Logical
+A = True
+B = False
+ 
+print (A and B) 
+print (A or B)    
+print (not A)       
+ 
+#Bit
+A = 1
+B = 5
+ 
+print (A & B)
+print (A | B)
+print (A ^ B)
+print (~A)
+
+
+# ==========================================
+# No. 13 (Bitwise Shift)
+# ==========================================
+A = 15 #biner 1111
+
+print (A << 1) #bit biner dari angka 15 ke arah kiri sebanyak 1 kali. sehingga biner 11110 (30)
+
+print (A >> 1) #bit biner dari angka 15 ke arah kanan sebanyak 1 kali. sehingga 1 yang berada di posisi paling kanan akan terdorong keluar (hilang). Hasilnya menjadi sisa 3 digit saja: 111 (7)
+
+
+# ==========================================
+# No. 14 (Operasi Bitwise Kompleks)
+# ==========================================
+X = 5    #biner 0101
+Y = 9    #biner 1001
+
+A = X & Y
+B = X | Y
+C = ~ X
+D = X ^ 2
+E = X >> 3
+F = X << 1
+
+print ( A, B, C, D, E, F, )
+
