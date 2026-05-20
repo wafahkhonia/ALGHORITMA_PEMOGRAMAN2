@@ -1,0 +1,38 @@
+nomor = [25, 30, 80, 10, 59]
+n = len(nomor) #Untuk menghitung panjang atau jumlah elemen
+
+#Loop luar for(perulangan luar) yang akan berjalan sebanyak n kali (5 perulangan).
+for i in range(n):
+
+    #Loop dalam(perulangan dalam) mulai dari angka depan ke belakang untuk bandingkan angka
+    for a in range(n - 1):
+
+        #Untuk mengecek angka dikiri apakah leboh besar dari kanan
+        if nomor[a] > nomor[a + 1]:
+
+            #Tukar posisinya kalau lebih besar maka ditaruh dikanan
+            nomor[a], nomor[a + 1] = nomor[a + 1], nomor[a]
+
+print(f"Hasil Akhir: {nomor}")
+
+#NO2
+List = []
+swapped = True
+#variabel swapped dan memberinya nilai awal True. Variabel ini berfungsi sebagai penanda. Selama nilainya True, komputer menganggap mungkin masih ada yang berantakan, ayo cek lagi
+
+Num = int(input("Masukkan Panjang/Jumlah Elemen yang Akan diurutkan: "))
+
+for a in range(Num):
+    val = float(input("Maukkan Elemen List: "))
+    List.append(val)
+
+while swapped:
+    swapped = False      #Setiap kali komputer mulai menyisir dari depan, ini akan berasumsi bahwa list sudah rapi, maka kita mengatut(set) ke False
+    for a in range(len(List) -1):
+        if List[a] > List[a + 1]:    #Jika angka di sebelah kiri (List[a]) lebih besar daripada angka di kanannya (List[a + 1]), berarti mereka berantakan (tidak urut).
+            swapped = True   #jika ada angka yg berantakan maka asumsiny akan balik lagi ke True
+            #proses penukarannya, Angka yang besar pindah ke kanan, angka yang kecil pindah ke kiri.
+            List[a], List[a + 1] = List[a + 1], List[a]
+
+print("\nSorted Ascending: ") #Mencetak teks Sorted Ascending
+print(List) #mencetak nilai-nilai pada list yang sudah di urutkan dari yang terkecil di sebelah kiri dan yang terbesar sebelah kanan

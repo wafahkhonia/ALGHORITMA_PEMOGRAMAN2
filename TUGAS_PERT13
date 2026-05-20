@@ -1,0 +1,212 @@
+# ==============================================================================
+# NOMOR 1 (MENANGANI UNTUK: Membuat tuple dan tampilkan)
+# ==============================================================================
+tuple_1 = (1, 2, 4, 8)
+tuple_2 = 1., .5, .25, .125      # tuple tanpa kurung (dipisah koma)
+tuple_kosong = ()                # tuple kosong
+tuple_satu = (99,)               # tuple dengan 1 elemen (wajib ada koma)
+
+print("tuple_1 :", tuple_1)
+print("tuple_2 :", tuple_2)
+print("tuple_kosong :", tuple_kosong)
+print("tuple_satu :", tuple_satu)
+
+
+# ==============================================================================
+# NOMOR 2 (MENANGANI UNTUK: Menggunakan tuple)
+# ==============================================================================
+belasan = (11, 12, 13, 14, 15)
+
+print(belasan[0])   
+print(belasan[-2])  
+print(belasan[2:4])   
+
+# Menampilkan semua elemen dengan for loop
+for elemen in belasan:
+    print(elemen)
+
+
+# ==============================================================================
+# NOMOR 3 (MENANGANI UNTUK: Memodifikasi tuple)
+# ==============================================================================
+ratusan = (100, 200, 300, 400, 500)
+
+# Menambah elemen di akhir
+ratusan_baru = ratusan + (800,)
+print(ratusan_baru)    # → (100, 200, 300, 400, 500, 800)
+
+# Menambah elemen di awal
+ratusan_baru = (0,) + ratusan_baru
+print(ratusan_baru)    # → (0, 100, 200, 300, 400, 500, 800)
+
+
+# ==============================================================================
+# NOMOR 4 (MENANGANI UNTUK: Menggunakan tuple dengan len(), +, *, in dan not in)
+# ==============================================================================
+tupleee = (11, 22, 33, 44, 55)
+
+# len()
+print(len(tupleee))
+
+# operator +
+t1 = tupleee + (100, 1000)
+print(t1)
+
+# operator *
+t2 = tupleee * 3
+print(t2)
+
+# operator in
+print(22 in tupleee)
+
+# operator not in
+print(77 not in tupleee)
+
+
+# ==============================================================================
+# NOMOR 5 (MENANGANI UNTUK: Penugasan simultan pada tuple)
+# ==============================================================================
+# Menukar nilai antar variabel tanpa variabel sementara
+a = 100
+b = 200
+c = 300
+
+print("Sebelum :", a, b, c)
+
+# Penugasan simultan
+a, b, c = b, c, a
+print("Sesudah :", a, b, c)
+
+
+# ==============================================================================
+# NOMOR 6 (MENANGANI UNTUK: Membuat dictionary dan tampilkan)
+# ==============================================================================
+mahasiswa = {"andi": "informatika", "budi": "sistem informasi", "cici": "teknik komputer"}
+nilai_matematika = {'deni': 85, 'eka': 90, 'fani': 75}
+dict_kosong = {}
+
+print(mahasiswa)
+print(nilai_matematika)
+print(dict_kosong)
+
+
+# ==============================================================================
+# NOMOR 7 (MENANGANI UNTUK: Mengakses isi dictionary)
+# ==============================================================================
+# Membuat dictionary
+dictionary = {"cat": "kucing", "dog": "anjing", "horse": "kuda"}
+nilai_alpro2 = {'eka': 90, 'deni': 95, 'fani': 98}
+
+# Mengakses isi dictionary menggunakan kunci
+print(dictionary['cat'])
+print(dictionary['dog'])
+print(dictionary['horse'])
+print(nilai_alpro2['eka'])
+print(nilai_alpro2['deni'])
+print(nilai_alpro2['fani'])
+
+
+# ==============================================================================
+# NOMOR 8 (MENANGANI UNTUK: Method keys())
+# ==============================================================================
+dictionary = {"green": "hijau", "blue": "biru", "yellow": "kuning"}
+
+# Menggunakan method keys()
+for kunci in dictionary.keys():
+    print(kunci, "->", dictionary[kunci])
+
+
+# ==============================================================================
+# NOMOR 9 (MENANGANI UNTUK: Method values())
+# ==============================================================================
+dictionary = {"green": "hijau", "blue": "biru", "yellow": "kuning"}
+
+for nilai in dictionary.values():
+    print(nilai)
+
+
+# ==============================================================================
+# NOMOR 10 (MENANGANI UNTUK: Method items())
+# ==============================================================================
+dictionary = {"bonjour": "halo", "merci": "terima kasih", "oui": "ya"}
+
+# Menggunakan method items()
+print("=== Prancis - Indonesia ===")
+for prancis, indo in dictionary.items():
+    print(prancis, "->", indo)
+
+
+# ==============================================================================
+# NOMOR 11 (MENANGANI UNTUK: Method update())
+# ==============================================================================
+dictionary = {"apple": "apel", "mango": "mangga", "grape": "anggur"}
+print("Sebelum update:", dictionary)
+
+# Menambah pasangan kunci-nilai baru menggunakan update()
+dictionary.update({'watermelon': 'semangka'})
+print("Sesudah update:", dictionary)
+
+
+# ==============================================================================
+# NOMOR 12 (MENANGANI UNTUK: Method popitem())
+# ==============================================================================
+dictionary = {"apple": "apel", "mango": "mangga", "grape": "anggur"}
+print("Sebelum update:", dictionary)
+
+# Menambah pasangan kunci-nilai baru menggunakan update()
+dictionary.update({'watermelon': 'semangka'})
+print("Sesudah update:", dictionary)
+
+# Menggunakan popitem()
+kunci, nilai = dictionary.popitem()
+print("Elemen yang dihapus:", kunci, "->", nilai)
+print("Sesudah popitem:", dictionary)
+
+
+# ==============================================================================
+# NOMOR 13 (MENANGANI UNTUK: Modifikasi dictionary)
+# ==============================================================================
+# Membuat dictionary
+dictionary = {"apple": "apel", "mango": "mangga", "grape": "anggur"}
+print("Awal:", dictionary)
+
+# Memasukkan nilai baru ke kunci yang ada
+dictionary['apple'] = 'apel malang'
+print("Setelah ubah nilai:", dictionary)
+
+# Menghapus item spesifik
+del dictionary['mango']
+print("Setelah hapus mango:", dictionary)
+
+# Mengurutkan isi dictionary
+for key in sorted(dictionary.keys()):
+    print(key, "->", dictionary[key])
+
+
+# ==============================================================================
+# NOMOR 14 (MENANGANI UNTUK: Menangani Exception (try-except))
+# ==============================================================================
+while True:
+    try:
+        umur = int(input("masukkan umur kamu: "))
+        print("umur kamu adalah", umur, "tahun")
+        break
+    except:
+        print("Peringatan: umur harus berupa angka!")
+
+
+# ==============================================================================
+# NOMOR 15 (MENANGANI UNTUK: Menangani multiple exception)
+# ==============================================================================
+while True:
+    try:
+        buah = input("masukkan nama buah: ")
+        harga = int(input("masukkan harga buah: "))
+        jumlah = int(input("masukkan jumlah buah: "))
+        total = harga * jumlah
+        print("total harga", buah, "adalah", total)
+        break
+    except ValueError:
+        print("Peringatan: harga dan jumlah harus berupa angka!")
+    except:
+        print("Maaf sepertinya ada yang salah nih... :(")
